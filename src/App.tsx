@@ -1,5 +1,5 @@
 import React, { useState, useEffect, ReactElement } from 'react';
-
+import './App.css'; // Assume appropriate CSS is defined here
 // Type definitions
 interface Project {
   id: number;
