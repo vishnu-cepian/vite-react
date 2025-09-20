@@ -190,7 +190,7 @@ const App: React.FC = (): ReactElement => {
         <div className="hero-content">
           <h1>
             <span className="greeting">Hello, I'm</span>
-            <span className="name-glitch" data-text="ALEXANDER_CREATE">ALEXANDER_CREATE</span>
+            <span className="name-glitch" data-text="VISHNU_R_PILLAI">VISHNU_R_PILLAI</span>
             <span className="title">Full Stack Developer & AI Enthusiast</span>
           </h1>
           <p className="hero-description">
