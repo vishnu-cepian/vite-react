@@ -13,7 +13,7 @@ interface Project {
 interface Skill {
   name: string;
   level: number;
-  category: 'frontend' | 'backend' | 'tools' | 'other';
+  category: 'frontend' | 'backend' | 'tools' | 'database' | 'other';
 }
 
 interface Experience {
@@ -36,28 +36,31 @@ const App: React.FC = (): ReactElement => {
 
   // Sample data
   const skills: Skill[] = [
-    { name: 'React', level: 90, category: 'frontend' },
-    { name: 'TypeScript', level: 85, category: 'frontend' },
-    { name: 'Node.js', level: 80, category: 'backend' },
-    { name: 'Python', level: 75, category: 'backend' },
-    { name: 'AWS', level: 70, category: 'tools' },
-    { name: 'Three.js', level: 65, category: 'frontend' },
+    { name: 'Node.js', level: 90, category: 'backend' },
+    { name: 'JavaScript', level: 85, category: 'frontend' },
+    { name: 'Java', level: 85, category: 'backend' },
+    { name: 'C', level: 85, category: 'backend' },
+    { name: 'React', level: 60, category: 'frontend' },
+    { name: 'Postgres', level: 85, category: 'database' },
+    { name: 'Redis', level: 80, category: 'database' },
+    { name: 'Docker', level: 70, category: 'tools' },
+    { name: 'AWS', level: 60, category: 'tools' },
   ];
 
   const projects: Project[] = [
     {
       id: 1,
-      title: 'AI-Powered Analytics Dashboard',
-      description: 'Real-time data visualization with machine learning insights',
-      technologies: ['React', 'TypeScript', 'TensorFlow.js', 'D3.js'],
+      title: 'Seu India',
+      description: 'Role based E-commerce platform',
+      technologies: ['Node.js', 'JavaScript', 'Express', 'PostgreSQL', 'Redis', 'socket.io'],
       githubUrl: '#',
       demoUrl: '#',
     },
     {
       id: 2,
-      title: 'Blockchain Voting System',
-      description: 'Secure decentralized voting platform using Ethereum smart contracts',
-      technologies: ['Solidity', 'Web3.js', 'React', 'Node.js'],
+      title: 'SecureQr - An Android App for Secure Qr Code Scanning',
+      description: 'Secure decentralized QR code scanning platform using Ethereum smart contracts',
+      technologies: ['Solidity', 'Web3.js', 'Kotlin', 'AndroidStudio', 'Node.js', 'MongoDB', 'Express', 'React', 'Python Flask'],
       githubUrl: '#',
       demoUrl: '#',
     },
@@ -65,25 +68,25 @@ const App: React.FC = (): ReactElement => {
 
   const experiences: Experience[] = [
     {
-      company: 'Tech Innovations Inc.',
-      role: 'Senior Frontend Developer',
-      period: '2021 - Present',
+      company: 'Nexs private ltd.',
+      role: 'Back-End Developer',
+      period: '2025 - Present',
       description: [
-        'Led development of next-generation web applications',
-        'Implemented advanced React patterns and performance optimizations',
-        'Mentored junior developers and established coding standards'
+        'Led development of Complete scalable Backend systems using Node.js and Express',
+        'Implemented advanced caching strategies for performance optimizations',
+        'Collaborated with Frontend devs for seamless integration of APIs'
       ]
     },
-    {
-      company: 'Digital Solutions LLC',
-      role: 'Full Stack Developer',
-      period: '2018 - 2021',
-      description: [
-        'Developed full-stack applications using React and Node.js',
-        'Designed and implemented RESTful APIs',
-        'Collaborated with UX designers to create intuitive interfaces'
-      ]
-    },
+    // {
+    //   company: 'Digital Solutions LLC',
+    //   role: 'Full Stack Developer',
+    //   period: '2018 - 2021',
+    //   description: [
+    //     'Developed full-stack applications using React and Node.js',
+    //     'Designed and implemented RESTful APIs',
+    //     'Collaborated with UX designers to create intuitive interfaces'
+    //   ]
+    // },
   ];
 
   // Handle scroll to update active section
@@ -191,11 +194,11 @@ const App: React.FC = (): ReactElement => {
           <h1>
             <span className="greeting">Hello, I'm</span>
             <span className="name-glitch" data-text="VISHNU_R_PILLAI">VISHNU_R_PILLAI</span>
-            <span className="title">Full Stack Developer & AI Enthusiast</span>
+            <span className="title">BACK-END DEVEOPER</span>
           </h1>
           <p className="hero-description">
-            Crafting the future through innovative code and cutting-edge technology solutions.
-            Specializing in React, TypeScript, and cloud-native applications.
+            Crafting the future Systems innovative code and cutting-edge technology solutions.
+            Specializing in Node.js, JavaScript, Java and cloud-native applications.
           </p>
           <div className="hero-buttons">
             <button className="btn-primary">View Projects</button>
@@ -217,10 +220,10 @@ const App: React.FC = (): ReactElement => {
         <div className="about-content">
           <div className="about-text">
             <p>
-              I'm a passionate software developer with over 5 years of experience creating 
+              I'm a passionate software developer with over 6 months of experience creating 
               digital solutions that push the boundaries of technology. My expertise spans 
               from frontend aesthetics to backend architecture, with a special interest in 
-              AI integration and futuristic web experiences.
+              AI integration and futuristic backend Systems.
             </p>
             <p>
               When I'm not coding, I'm exploring emerging technologies, contributing to 
@@ -228,11 +231,11 @@ const App: React.FC = (): ReactElement => {
             </p>
             <div className="stats">
               <div className="stat">
-                <span className="number">50+</span>
+                <span className="number">14+</span>
                 <span className="label">Projects Completed</span>
               </div>
               <div className="stat">
-                <span className="number">5+</span>
+                <span className="number">.5+</span>
                 <span className="label">Years Experience</span>
               </div>
               <div className="stat">
@@ -332,7 +335,7 @@ const App: React.FC = (): ReactElement => {
               </div>
               <div className="contact-item">
                 <span className="label">Location:</span>
-                <span>San Francisco, CA</span>
+                <span>Kerala, India</span>
               </div>
             </div>
             <div className="social-links">
